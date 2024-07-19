@@ -30,7 +30,7 @@ const Contact: React.FC<HelpProps> = ({ command }) => {
           {/* <div className="flex items-center gap-2">
             <FaPhone className="text-2xl text-green-500" />
             <a
-              href="tel:+917477663469"
+              href="tel:
               className="text-lg text-red-700 hover:underline"
             >
               +91 
