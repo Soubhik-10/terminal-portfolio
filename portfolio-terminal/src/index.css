@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.col-text {
+  color: rgb(31, 231, 217);
+}
+.col-name {
+  color: rgb(0, 155, 41);
+}
+.col-bg {
+  background-color: rgba(0, 0, 0, 1);
+}
+
+.ascii-art {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 5px;
+  white-space: pre;
+  color: #3a92da; /* Text color */
+  background-color: transparent; /* Background color */
+  padding: 10px;
+  overflow: auto;
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.example {
+  overflow: auto;
+}
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.help-text {
+  color: rgb(205, 0, 198);
+}
