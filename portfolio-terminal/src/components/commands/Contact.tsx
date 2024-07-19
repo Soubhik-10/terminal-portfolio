@@ -1,5 +1,5 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 interface HelpProps {
   command: string;
