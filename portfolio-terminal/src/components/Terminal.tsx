@@ -95,12 +95,18 @@ export const Terminal = () => {
         id: uuid(),
         text: <Invalid command={command} />,
       };
-      setCommands([...updatedCommands, invalidCommand]);
-      const invalidCommand1: Command = {
+
+      // Add the invalid command response
+      const updatedCommandsWithInvalid = [...updatedCommands, invalidCommand];
+
+      // Create the help command response
+      const helpCommand: Command = {
         id: uuid(),
         text: <Help command={"Help"} load={false} />,
       };
-      setCommands([...updatedCommands, invalidCommand1]);
+
+      // Add both the invalid command and help command to the state
+      setCommands([...updatedCommandsWithInvalid, helpCommand]);
     }
 
     // Update command history and clear the input
