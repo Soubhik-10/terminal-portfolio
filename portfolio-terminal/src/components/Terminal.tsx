@@ -7,6 +7,7 @@ import Invalid from "./commands/Invalid";
 import Contact from "./commands/Contact";
 import Projects from "./commands/Projects";
 import { v4 as uuid } from "uuid";
+import Welcome from "./commands/Welcome";
 
 interface Command {
   id: string;
@@ -140,14 +141,11 @@ export const Terminal = () => {
 
   return (
     <div className="w-full bg-transparent flex flex-col font-mono px-4 mt-4 example">
-      <div className="w-full bg-transparent col-text mb-4 example">
-        Welcome to the portfolio of Soubhik Singha Mahapatra. <br />
-        For the list of commands type "help" in the terminal. Enjoy :)
-      </div>
       <div
-        className="flex flex-col overflow-auto example"
-        style={{ maxHeight: "400px" }}
+        className="flex flex-col overflow-auto example max-h-96 sm:max-h-[530px]"
+        style={{ maxHeight: "600px" }}
       >
+        <Welcome />
         {commands.map((cmd) => (
           <div key={cmd.id} className="flex flex-col mb-2">
             {typeof cmd.text === "string" ? null : cmd.text}
